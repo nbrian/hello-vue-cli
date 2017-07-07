@@ -27,6 +27,7 @@
         },
         methods: {
             created() {
+                //https://www.restcountries.eu/#api-endpoints-all
                 axios.get(`http://jsonplaceholder.typicode.com/posts`)
                     .then(response => {
                         // JSON responses are automatically parsed.
