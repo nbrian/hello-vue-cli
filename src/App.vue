@@ -3,7 +3,8 @@
     <app-message></app-message>
     <example-component :myProp="[{name:'aa'},{name:'bb'}]"></example-component>
     <countries-input></countries-input>
-    <mdl-select>
+
+    <mdl-select2>
       name = "name"
       label = "label"
       :values = "[{key:'a',val:'aaa'},{key:'b',val:'bbb'}]"
@@ -16,7 +17,7 @@
       name="a"
       default="a"
       :values="[{key:'a',val:'aaa'},{key:'b',val:'bbb'}]"> -->
-  </mdl-select>
+  </mdl-select2>
   </div>
 </template>
 

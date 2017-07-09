@@ -14,6 +14,17 @@
                 countries: []
             }
         },
+        // ready() {
+        //     axios.get(`https://restcountries.eu/rest/v2/all`)
+        //     .then(response => { 
+        //         for(let i = 0; i < response.data.length; i ++){
+        //             let country = response.data[i];
+        //             console.log(country);
+        //             this.countries.push({name:country.name, value:country});
+        //         }
+        //     })
+        //     .catch(e => { console.log(e) });
+        // },
         created: function(){
            this.fetchCountries(); 
         },
@@ -23,6 +34,7 @@
                 .then(response => { 
                     for(let i = 0; i < response.data.length; i ++){
                         let country = response.data[i];
+                        // console.log(country);
                         this.countries.push({name:country.name, value:country});
                     }
                 })
