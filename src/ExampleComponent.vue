@@ -1,10 +1,14 @@
 <template>
-    <p>Dynamic prop value: {{myProp}} </p>
+    <p>{{id}} Dynamic prop value: {{myProp[0].name}} </p>
 </template>
 
 <script>
     export default {
-        props: ['myProp']
+        // props: ['myProp']
+        props: {
+            myProp:'',
+            id:''
+        }
     }
 </script>
 <style>
